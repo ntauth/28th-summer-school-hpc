@@ -1,4 +1,6 @@
-# Hands-on for Summer School 2019 - Rome edition 
+# 28-th Summer School on Parallel Computing - Rome edition 2019 (1-12 July)
+
+## Hands-on for Summer School
 
 To get the files open a terminal and clone the repository:
 
