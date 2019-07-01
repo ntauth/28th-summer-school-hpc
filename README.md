@@ -3,7 +3,7 @@
 To get the files open a terminal and clone the repository:
 
 ```
-git clone https://gitlab.hpc.cineca.it/scai-training-rome/summer-school-2019.git
+git clone https://gitlab.hpc.cineca.it/training/summer-school-2019-rome.git
 ```
 
 To update the content of the cloned folders during the school:
