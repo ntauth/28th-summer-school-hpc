@@ -1,4 +1,6 @@
-# Hands-on for Summer School 2019 - Rome edition 
+# 28-th Summer School on Parallel Computing - Rome edition 2019 (1-12 July)
+
+## Hands-on for Summer School
 
 To get the files open a terminal and clone the repository:
 
@@ -15,7 +17,7 @@ git pull
 This will create the folder tree
 ```
 summer-school-2019
-summer-school-2019/GPU
+summer-school-2019/GPU-programming
 summer-school-2019/...
 ```
 
