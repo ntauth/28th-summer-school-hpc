@@ -1,0 +1,1 @@
+nvcc -arch=sm_20 -I/caspur/local/apps/cuda/3.2/NVIDIA_CUDA_SDK/C/common/inc -I/caspur/local/apps/cuda/3.2/NVIDIA_CUDA_SDK/shared/inc -L$CUDADIR/NVIDIA_CUDA_SDK/C/lib -lcutil_x86_64 -L/caspur/local/apps/cuda/current/NVIDIA_CUDA_SDK/shared/lib -lshrutil_x86_64 bandwidthTest.cu -o bandwidthTest
