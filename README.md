@@ -17,7 +17,7 @@ git pull
 This will create the folder tree
 ```
 summer-school-2019
-summer-school-2019/GPU
+summer-school-2019/GPU-programming
 summer-school-2019/...
 ```
 
