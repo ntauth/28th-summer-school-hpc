@@ -1,0 +1,38 @@
+[!] Invalid rank.
+[!] Invalid rank.
+[!] Invalid rank.
+[!] Invalid rank.
+[!] Invalid rank.
+[!] Invalid rank.
+[!] Invalid rank.
+[!] Invalid rank.
+[!] Invalid rank.
+[!] Invalid rank.
+[!] Invalid rank.
+[!] Invalid rank.
+[!] Invalid rank.
+[!] Invalid rank.
+[!] Invalid rank.
+[!] Invalid rank.
+[!] Invalid rank.
+[!] Invalid rank.
+[!] Invalid rank.
+[!] Invalid rank.
+[!] Invalid rank.
+[!] Invalid rank.
+[!] Invalid rank.
+[!] Invalid rank.
+[!] Invalid rank.
+[!] Invalid rank.
+[!] Invalid rank.
+[!] Invalid rank.
+[!] Invalid rank.
+[!] Invalid rank.
+srun: error: node480: tasks 21,29: Segmentation fault
+srun: Terminating job step 1853366.0
+slurmstepd: error: *** STEP 1853366.0 ON node479 CANCELLED AT 2019-07-02T15:07:47 ***
+srun: error: node479: tasks 0,2,4,6-12,14-15: Segmentation fault
+srun: error: node479: task 3: Terminated
+srun: error: node479: tasks 5,13: Exited with exit code 1
+srun: error: node480: tasks 16-20,22-28,30-31: Exited with exit code 1
+srun: Force Terminated job step 1853366.0
