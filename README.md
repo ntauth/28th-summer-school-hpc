@@ -19,6 +19,7 @@ This will create the folder tree
 summer-school-2019
 summer-school-2019/GPU-programming
 summer-school-2019/Cineca-HPC-systems-Introduction
+summer-school-2019/MPI
 summer-school-2019/...
 ```
 
