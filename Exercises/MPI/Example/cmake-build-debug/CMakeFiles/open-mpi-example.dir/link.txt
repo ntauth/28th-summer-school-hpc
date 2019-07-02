@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/open-mpi-example.dir/main.c.o  -o open-mpi-example 
