@@ -1,0 +1,8 @@
+Proc 0 sends 500 integers to proc 1
+Proc 1 sends 500 integers to proc 0
+Proc 1 receives 500 integers from proc 0
+Proc 1 has A[0] = 1, B[0] = 0
+
+Proc 0 receives 500 integers from proc 1
+Proc 0 has A[0] = 0, B[0] = 1
+

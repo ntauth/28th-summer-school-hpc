@@ -1,0 +1,14 @@
+
+smooth.x:7580 terminated with signal 6 at PC=7f0b69abf5f7 SP=7ffc47c36298.  Backtrace:
+/lib64/libc.so.6(gsignal+0x37)[0x7f0b69abf5f7]
+/lib64/libc.so.6(abort+0x148)[0x7f0b69ac0ce8]
+/lib64/libc.so.6(+0x75317)[0x7f0b69aff317]
+/lib64/libc.so.6(+0x7b184)[0x7f0b69b05184]
+/lib64/libc.so.6(+0x7e8e7)[0x7f0b69b088e7]
+/lib64/libc.so.6(__libc_malloc+0x4c)[0x7f0b69b098dc]
+/cineca/prod/opt/compilers/intel/pe-xe-2018/binary/impi/2018.4.274/lib64/libmpi.so.12(+0x27012b)[0x7f0b6a6e312b]
+/cineca/prod/opt/compilers/intel/pe-xe-2018/binary/impi/2018.4.274/lib64/libmpi.so.12(+0x27666f)[0x7f0b6a6e966f]
+/cineca/prod/opt/compilers/intel/pe-xe-2018/binary/impi/2018.4.274/lib64/libmpi.so.12(PMPI_Gather+0x36a)[0x7f0b6a6e820a]
+./smooth.x[0x4010d7]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f0b69aabb15]
+./smooth.x[0x400b79]

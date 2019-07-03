@@ -1,0 +1,5 @@
+
+matvec.x:22730 terminated with signal 11 at PC=400fb8 SP=7fffd98afc30.  Backtrace:
+/galileo/home/usertrain/a08tra77/28th-summer-school-hpc/Exercises/MPI/Exercise 10 - MatVec Multiply/./matvec.x[0x400fb8]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b75fd997b15]
+/galileo/home/usertrain/a08tra77/28th-summer-school-hpc/Exercises/MPI/Exercise 10 - MatVec Multiply/./matvec.x[0x400bf9]

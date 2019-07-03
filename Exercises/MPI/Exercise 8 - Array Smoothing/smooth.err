@@ -1,0 +1,16 @@
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+Fatal error in MPI_Sendrecv: Invalid tag, error stack:
+MPI_Sendrecv(259): MPI_Sendrecv(sbuf=0x1e52530, scount=2, MPI_DOUBLE_PRECISION, dest=3, stag=1229803555, rbuf=0x1e52590, rcount=2, MPI_DOUBLE_PRECISION, src=1, rtag=1229803555, MPI_COMM_WORLD, status=0x7ffde268c120) failed
+MPI_Sendrecv(132): Invalid tag, value is 1229803555
+Fatal error in MPI_Sendrecv: Invalid tag, error stack:
+MPI_Sendrecv(259): MPI_Sendrecv(sbuf=0x71f530, scount=2, MPI_DOUBLE_PRECISION, dest=0, stag=1229803555, rbuf=0x71f590, rcount=2, MPI_DOUBLE_PRECISION, src=2, rtag=1229803555, MPI_COMM_WORLD, status=0x7ffe0b325430) failed
+MPI_Sendrecv(132): Invalid tag, value is 1229803555
+Fatal error in MPI_Sendrecv: Invalid tag, error stack:
+MPI_Sendrecv(259): MPI_Sendrecv(sbuf=0x189b530, scount=2, MPI_DOUBLE_PRECISION, dest=1, stag=1229803555, rbuf=0x189b590, rcount=2, MPI_DOUBLE_PRECISION, src=3, rtag=1229803555, MPI_COMM_WORLD, status=0x7fffa447d040) failed
+MPI_Sendrecv(132): Invalid tag, value is 1229803555
+Fatal error in MPI_Sendrecv: Invalid tag, error stack:
+MPI_Sendrecv(259): MPI_Sendrecv(sbuf=0xfd5530, scount=2, MPI_DOUBLE_PRECISION, dest=2, stag=1229803555, rbuf=0xfd5590, rcount=2, MPI_DOUBLE_PRECISION, src=0, rtag=1229803555, MPI_COMM_WORLD, status=0x7ffe9cff0720) failed
+MPI_Sendrecv(132): Invalid tag, value is 1229803555
+slurmstepd: error: *** STEP 1859839.0 ON node192 CANCELLED AT 2019-07-03T12:56:22 ***
+srun: error: node192: tasks 0-3: Killed
+srun: Terminating job step 1859839.0
