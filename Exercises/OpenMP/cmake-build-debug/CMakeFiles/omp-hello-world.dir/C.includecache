@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/src/omp-hello-world.c
+stdio.h
+-
+omp.h
+-
+

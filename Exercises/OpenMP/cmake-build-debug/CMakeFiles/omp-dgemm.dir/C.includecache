@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/src/omp-dgemm.c
+assert.h
+-
+stdio.h
+-
+time.h
+-
+stdlib.h
+-
+string.h
+-
+time.h
+-
+omp.h
+-
+

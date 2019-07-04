@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/src/omp-integral-pi.c
+assert.h
+-
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+time.h
+-
+omp.h
+-
+

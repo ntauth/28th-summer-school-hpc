@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="OpenMP" targetName="omp-nbody" />
+      <config projectName="OpenMP" targetName="omp-hello-world" />
+      <config projectName="OpenMP" targetName="omp-dgemm" />
+      <config projectName="OpenMP" targetName="omp-integral-pi" />
+      <config projectName="OpenMP" targetName="omp-laplace" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9a1aea0c-811a-40a3-86f2-1e256c35a6d2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/include/sal.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/omp-dgemm.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/omp-integral-pi.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/omp-laplace.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/omp-nbody.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MPI/Example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MPI/Example/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../OpenMP/Exercises/Laplace/laplace.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="24" selection-end-line="82" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/omp-hello-world.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/omp-integral-pi.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+              <folding>
+                <element signature="e#46#65#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/omp-laplace.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="768">
+              <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+              <folding>
+                <element signature="e#58#76#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/omp-nbody.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-988">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../OpenMP/Exercises/Nbody/Nbody.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/main.c" />
+        <option value="$PROJECT_DIR$/omp-hello-world.c" />
+        <option value="$PROJECT_DIR$/omp-dgemm.c" />
+        <option value="$PROJECT_DIR$/include/sal.h" />
+        <option value="$PROJECT_DIR$/src/omp-integral-pi.cpp" />
+        <option value="$PROJECT_DIR$/src/omp-integral-pi.c" />
+        <option value="$PROJECT_DIR$/src/omp-dgemm.c" />
+        <option value="$PROJECT_DIR$/src/omp-laplace.c" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/omp-nbody.c" />
+      </list>
+    </option>
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="hGAjvnjT" />
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/OpenMP.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="324" />
+    <option name="y" value="79" />
+    <option name="width" value="1360" />
+    <option name="height" value="822" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="OpenMP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenMP" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenMP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenMP" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OpenMP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenMP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="CMake Application.omp-nbody">
+    <configuration name="omp-dgemm" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OpenMP" TARGET_NAME="omp-dgemm" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OpenMP" RUN_TARGET_NAME="omp-dgemm">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="omp-hello-world" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OpenMP" TARGET_NAME="omp-hello-world" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OpenMP" RUN_TARGET_NAME="omp-hello-world">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="omp-integral-pi" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OpenMP" TARGET_NAME="omp-integral-pi" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OpenMP" RUN_TARGET_NAME="omp-integral-pi">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="omp-laplace" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OpenMP" TARGET_NAME="omp-laplace" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OpenMP" RUN_TARGET_NAME="omp-laplace">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="omp-nbody" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OpenMP" TARGET_NAME="omp-nbody" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OpenMP" RUN_TARGET_NAME="omp-nbody">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.omp-dgemm" />
+      <item itemvalue="CMake Application.omp-hello-world" />
+      <item itemvalue="CMake Application.omp-integral-pi" />
+      <item itemvalue="CMake Application.omp-laplace" />
+      <item itemvalue="CMake Application.omp-nbody" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9a1aea0c-811a-40a3-86f2-1e256c35a6d2" name="Default Changelist" comment="" />
+      <created>1562230786466</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562230786466</updated>
+      <workItem from="1562230787736" duration="11465000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="11465000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1" y="26" width="1602" height="839" extended-state="6" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24967907" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32884097" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="4" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.28032345" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="CMake" order="10" weight="0.32884097" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Cargo" order="1" weight="0.32991013" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/include/sal.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+          <folding>
+            <element signature="e#1268#1286#0" expanded="true" />
+            <element signature="e#1345#1365#0" expanded="true" />
+            <element signature="e#2121#2134#0" expanded="true" />
+            <element signature="e#2264#2278#0" expanded="true" />
+            <element signature="e#2415#2431#0" expanded="true" />
+            <element signature="e#2572#2587#0" expanded="true" />
+            <element signature="e#2731#2749#0" expanded="true" />
+            <element signature="e#2904#2923#0" expanded="true" />
+            <element signature="e#3096#3121#0" expanded="true" />
+            <element signature="e#3304#3325#0" expanded="true" />
+            <element signature="e#3502#3526#0" expanded="true" />
+            <element signature="e#3706#3727#0" expanded="true" />
+            <element signature="e#3910#3937#0" expanded="true" />
+            <element signature="e#4130#4153#0" expanded="true" />
+            <element signature="e#4336#4360#0" expanded="true" />
+            <element signature="e#4558#4588#0" expanded="true" />
+            <element signature="e#4796#4822#0" expanded="true" />
+            <element signature="e#5014#5038#0" expanded="true" />
+            <element signature="e#5238#5268#0" expanded="true" />
+            <element signature="e#5476#5501#0" expanded="true" />
+            <element signature="e#5704#5735#0" expanded="true" />
+            <element signature="e#5942#5966#0" expanded="true" />
+            <element signature="e#6166#6196#0" expanded="true" />
+            <element signature="e#7558#7585#0" expanded="true" />
+            <element signature="e#7800#7833#0" expanded="true" />
+            <element signature="e#8056#8084#0" expanded="true" />
+            <element signature="e#8302#8336#0" expanded="true" />
+            <element signature="e#8556#8582#0" expanded="true" />
+            <element signature="e#8782#8810#0" expanded="true" />
+            <element signature="e#9016#9044#0" expanded="true" />
+            <element signature="e#9254#9284#0" expanded="true" />
+            <element signature="e#9510#9527#0" expanded="true" />
+            <element signature="e#9677#9695#0" expanded="true" />
+            <element signature="e#9852#9872#0" expanded="true" />
+            <element signature="e#10033#10052#0" expanded="true" />
+            <element signature="e#10216#10238#0" expanded="true" />
+            <element signature="e#10413#10436#0" expanded="true" />
+            <element signature="e#10629#10658#0" expanded="true" />
+            <element signature="e#10861#10886#0" expanded="true" />
+            <element signature="e#11077#11102#0" expanded="true" />
+            <element signature="e#11525#11552#0" expanded="true" />
+            <element signature="e#11755#11783#0" expanded="true" />
+            <element signature="e#12001#12035#0" expanded="true" />
+            <element signature="e#12263#12293#0" expanded="true" />
+            <element signature="e#12505#12533#0" expanded="true" />
+            <element signature="e#12753#12787#0" expanded="true" />
+            <element signature="e#13015#13044#0" expanded="true" />
+            <element signature="e#13267#13302#0" expanded="true" />
+            <element signature="e#13529#13557#0" expanded="true" />
+            <element signature="e#13777#13811#0" expanded="true" />
+            <element signature="e#14045#14077#0" expanded="true" />
+            <element signature="e#14315#14353#0" expanded="true" />
+            <element signature="e#14593#14623#0" expanded="true" />
+            <element signature="e#14843#14875#0" expanded="true" />
+            <element signature="e#15101#15133#0" expanded="true" />
+            <element signature="e#15363#15397#0" expanded="true" />
+            <element signature="e#15632#15649#0" expanded="true" />
+            <element signature="e#15805#15826#0" expanded="true" />
+            <element signature="e#16020#16054#0" expanded="true" />
+            <element signature="e#16295#16333#0" expanded="true" />
+            <element signature="e#16562#16588#0" expanded="true" />
+            <element signature="e#16789#16819#0" expanded="true" />
+            <element signature="e#17044#17080#0" expanded="true" />
+            <element signature="e#17331#17371#0" expanded="true" />
+            <element signature="e#17596#17617#0" expanded="true" />
+            <element signature="e#17793#17818#0" expanded="true" />
+            <element signature="e#18032#18070#0" expanded="true" />
+            <element signature="e#18600#18631#0" expanded="true" />
+            <element signature="e#18860#18895#0" expanded="true" />
+            <element signature="e#19136#19171#0" expanded="true" />
+            <element signature="e#19420#19459#0" expanded="true" />
+            <element signature="e#19710#19744#0" expanded="true" />
+            <element signature="e#19990#20028#0" expanded="true" />
+            <element signature="e#20286#20324#0" expanded="true" />
+            <element signature="e#20590#20632#0" expanded="true" />
+            <element signature="e#20888#20919#0" expanded="true" />
+            <element signature="e#21137#21168#0" expanded="true" />
+            <element signature="e#21400#21438#0" expanded="true" />
+            <element signature="e#21699#21741#0" expanded="true" />
+            <element signature="e#22006#22044#0" expanded="true" />
+            <element signature="e#22290#22307#0" expanded="true" />
+            <element signature="e#22489#22523#0" expanded="true" />
+            <element signature="e#22750#22781#0" expanded="true" />
+            <element signature="e#23010#23045#0" expanded="true" />
+            <element signature="e#23284#23318#0" expanded="true" />
+            <element signature="e#23564#23602#0" expanded="true" />
+            <element signature="e#23854#23889#0" expanded="true" />
+            <element signature="e#24138#24177#0" expanded="true" />
+            <element signature="e#24442#24483#0" expanded="true" />
+            <element signature="e#24762#24807#0" expanded="true" />
+            <element signature="e#25096#25140#0" expanded="true" />
+            <element signature="e#25436#25484#0" expanded="true" />
+            <element signature="e#25786#25831#0" expanded="true" />
+            <element signature="e#26130#26179#0" expanded="true" />
+            <element signature="e#26445#26461#0" expanded="true" />
+            <element signature="e#26614#26635#0" expanded="true" />
+            <element signature="e#26818#26845#0" expanded="true" />
+            <element signature="e#27038#27061#0" expanded="true" />
+            <element signature="e#27244#27268#0" expanded="true" />
+            <element signature="e#27470#27501#0" expanded="true" />
+            <element signature="e#27728#27762#0" expanded="true" />
+            <element signature="e#27996#28029#0" expanded="true" />
+            <element signature="e#28242#28266#0" expanded="true" />
+            <element signature="e#28453#28479#0" expanded="true" />
+            <element signature="e#28658#28677#0" expanded="true" />
+            <element signature="e#28841#28863#0" expanded="true" />
+            <element signature="e#29052#29082#0" expanded="true" />
+            <element signature="e#29552#29589#0" expanded="true" />
+            <element signature="e#29843#29883#0" expanded="true" />
+            <element signature="e#30136#30155#0" expanded="true" />
+            <element signature="e#30324#30344#0" expanded="true" />
+            <element signature="e#30516#30536#0" expanded="true" />
+            <element signature="e#30718#30743#0" expanded="true" />
+            <element signature="e#30942#30968#0" expanded="true" />
+            <element signature="e#31174#31202#0" expanded="true" />
+            <element signature="e#31402#31424#0" expanded="true" />
+            <element signature="e#31608#31631#0" expanded="true" />
+            <element signature="e#31817#31841#0" expanded="true" />
+            <element signature="e#32038#32066#0" expanded="true" />
+            <element signature="e#32395#32432#0" expanded="true" />
+            <element signature="e#32658#32681#0" expanded="true" />
+            <element signature="e#32863#32888#0" expanded="true" />
+            <element signature="e#33094#33125#0" expanded="true" />
+            <element signature="e#33341#33371#0" expanded="true" />
+            <element signature="e#33586#33617#0" expanded="true" />
+            <element signature="e#33807#33824#0" expanded="true" />
+            <element signature="e#33991#34012#0" expanded="true" />
+            <element signature="e#34209#34239#0" expanded="true" />
+            <element signature="e#34434#34452#0" expanded="true" />
+            <element signature="e#34927#34948#0" expanded="true" />
+            <element signature="e#35132#35158#0" expanded="true" />
+            <element signature="e#35355#35380#0" expanded="true" />
+            <element signature="e#35578#35605#0" expanded="true" />
+            <element signature="e#35817#35848#0" expanded="true" />
+            <element signature="e#36302#36332#0" expanded="true" />
+            <element signature="e#36562#36594#0" expanded="true" />
+            <element signature="e#36838#36874#0" expanded="true" />
+            <element signature="e#37110#37136#0" expanded="true" />
+            <element signature="e#37343#37373#0" expanded="true" />
+            <element signature="e#37596#37628#0" expanded="true" />
+            <element signature="e#37865#37901#0" expanded="true" />
+            <element signature="e#38484#38518#0" expanded="true" />
+            <element signature="e#38737#38761#0" expanded="true" />
+            <element signature="e#38976#39013#0" expanded="true" />
+            <element signature="e#39255#39286#0" expanded="true" />
+            <element signature="e#39504#39532#0" expanded="true" />
+            <element signature="e#39733#39757#0" expanded="true" />
+            <element signature="e#39948#39973#0" expanded="true" />
+            <element signature="e#40171#40198#0" expanded="true" />
+            <element signature="e#40406#40431#0" expanded="true" />
+            <element signature="e#40651#40685#0" expanded="true" />
+            <element signature="e#40904#40928#0" expanded="true" />
+            <element signature="e#41143#41180#0" expanded="true" />
+            <element signature="e#41422#41453#0" expanded="true" />
+            <element signature="e#41673#41702#0" expanded="true" />
+            <element signature="e#41924#41957#0" expanded="true" />
+            <element signature="e#42191#42224#0" expanded="true" />
+            <element signature="e#42458#42494#0" expanded="true" />
+            <element signature="e#42749#42788#0" expanded="true" />
+            <element signature="e#43054#43075#0" expanded="true" />
+            <element signature="e#43251#43273#0" expanded="true" />
+            <element signature="e#43462#43492#0" expanded="true" />
+            <element signature="e#43699#43726#0" expanded="true" />
+            <element signature="e#44023#44036#0" expanded="true" />
+            <element signature="e#44195#44215#0" expanded="true" />
+            <element signature="e#44405#44421#0" expanded="true" />
+            <element signature="e#44573#44588#0" expanded="true" />
+            <element signature="e#44859#44874#0" expanded="true" />
+            <element signature="e#45030#45054#0" expanded="true" />
+            <element signature="e#45247#45273#0" expanded="true" />
+            <element signature="e#45449#45463#0" expanded="true" />
+            <element signature="e#45606#45622#0" expanded="true" />
+            <element signature="e#45807#45831#0" expanded="true" />
+            <element signature="e#45979#46003#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../OpenMP/Exercises/Pi/pi.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-92">
+          <caret line="18" selection-start-line="18" selection-end-line="47" />
+          <folding>
+            <element signature="e#286#304#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/math.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="1064" column="9" selection-start-line="1064" selection-start-column="9" selection-end-line="1064" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../OpenMP/Exercises/MM/MM.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/omp-dgemm.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1840">
+          <caret line="115" column="14" selection-start-line="115" selection-start-column="14" selection-end-line="115" selection-end-column="14" />
+          <folding>
+            <element signature="e#46#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/omp-hello-world.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/omp-integral-pi.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+          <folding>
+            <element signature="e#46#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../OpenMP/Exercises/Laplace/laplace.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="24" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/omp-laplace.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+          <folding>
+            <element signature="e#58#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../OpenMP/Exercises/Nbody/Nbody.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/omp-nbody.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-988">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

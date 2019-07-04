@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/src/omp-laplace.c
+stdio.h
+-
+math.h
+-
+float.h
+-
+stdlib.h
+-
+string.h
+-
+time.h
+-
+

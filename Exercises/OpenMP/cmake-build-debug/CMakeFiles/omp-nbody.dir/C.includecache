@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/src/omp-nbody.c
+stdio.h
+-
+math.h
+-
+stdlib.h
+-
+

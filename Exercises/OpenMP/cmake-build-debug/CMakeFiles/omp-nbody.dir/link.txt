@@ -1,0 +1,1 @@
+/usr/bin/cc  -fopenmp -g    CMakeFiles/omp-nbody.dir/src/omp-nbody.c.o  -o omp-nbody -lm 

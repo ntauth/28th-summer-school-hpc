@@ -1,0 +1,7 @@
+/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/CMakeFiles/omp-dgemm.dir
+/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/CMakeFiles/omp-hello-world.dir
+/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/CMakeFiles/omp-integral-pi.dir
+/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/CMakeFiles/omp-laplace.dir
+/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/CMakeFiles/omp-nbody.dir

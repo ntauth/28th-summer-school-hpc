@@ -1,0 +1,1 @@
+/usr/bin/cc  -fopenmp -g    CMakeFiles/omp-laplace.dir/src/omp-laplace.c.o  -o omp-laplace -lm 

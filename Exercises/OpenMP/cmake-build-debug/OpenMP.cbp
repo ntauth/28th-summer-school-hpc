@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="OpenMP"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="omp-dgemm">
+				<Option output="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/omp-dgemm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 omp-dgemm"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="omp-dgemm/fast">
+				<Option output="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/omp-dgemm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 omp-dgemm/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="omp-hello-world">
+				<Option output="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/omp-hello-world" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 omp-hello-world"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="omp-hello-world/fast">
+				<Option output="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/omp-hello-world" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 omp-hello-world/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="omp-integral-pi">
+				<Option output="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/omp-integral-pi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 omp-integral-pi"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="omp-integral-pi/fast">
+				<Option output="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/omp-integral-pi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 omp-integral-pi/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="omp-laplace">
+				<Option output="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/omp-laplace" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 omp-laplace"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="omp-laplace/fast">
+				<Option output="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/omp-laplace" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 omp-laplace/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="omp-nbody">
+				<Option output="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/omp-nbody" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 omp-nbody"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="omp-nbody/fast">
+				<Option output="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/omp-nbody" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 omp-nbody/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/src/omp-dgemm.c">
+			<Option target="omp-dgemm"/>
+		</Unit>
+		<Unit filename="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/src/omp-hello-world.c">
+			<Option target="omp-hello-world"/>
+		</Unit>
+		<Unit filename="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/src/omp-integral-pi.c">
+			<Option target="omp-integral-pi"/>
+		</Unit>
+		<Unit filename="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/src/omp-laplace.c">
+			<Option target="omp-laplace"/>
+		</Unit>
+		<Unit filename="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/src/omp-nbody.c">
+			<Option target="omp-nbody"/>
+		</Unit>
+		<Unit filename="/home/ntauthority/Desktop/28th-summer-school-hpc/Exercises/OpenMP/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

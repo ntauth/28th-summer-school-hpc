@@ -1,0 +1,1 @@
+/usr/bin/cc  -fopenmp -g    CMakeFiles/omp-integral-pi.dir/src/omp-integral-pi.c.o  -o omp-integral-pi 
