@@ -18,14 +18,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a1aea0c-811a-40a3-86f2-1e256c35a6d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/include/sal.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/omp-dgemm.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/omp-integral-pi.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/omp-laplace.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/omp-nbody.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MPI/Example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MPI/Example/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9a1aea0c-811a-40a3-86f2-1e256c35a6d2" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -182,6 +175,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -250,12 +244,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562230786466</updated>
-      <workItem from="1562230787736" duration="11465000" />
+      <workItem from="1562230787736" duration="11517000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11465000" />
+    <option name="totallyTimeSpent" value="11517000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="26" width="1602" height="839" extended-state="6" />
