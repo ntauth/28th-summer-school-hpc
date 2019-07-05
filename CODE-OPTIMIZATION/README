@@ -1,0 +1,36 @@
+======================================================
+Hands-on 1
+======================================================
+Nella directory esercizio_1
+Completa il codice mm inserendo le opportue righe.
+Compilalo col comando make.
+Modifica l'ordine del loop registrando le prestazioni ottenute per le sei versioni possibili.
+======================================================
+Hands-on 2
+======================================================
+scarica ed installa valgrind
+git clone git://sourceware.org/git/valgrind.git
+cd valgrind
+./autogen.sh
+./configure --prefix=path_dove_installarlo
+make -j
+make install
+misura le prestazioni delle sei versioni del codice mm usando valgrind
+======================================================
+Hands-on 3
+======================================================
+Nella directory esercizio_2
+Misura le prestazioni delle sei versioni del prodotto matrice matrice usando valgrind.
+======================================================
+Hands-on 4
+======================================================
+Nella  directory esercizio_3
+Compila il codice con i diversi compilatori e le diverse opzioni di compilazione alla ricerca di quelle che permettono di ottenere le performance migliori
+======================================================
+Hands-on 5
+======================================================
+Nella directory MD
+Compila il codice in esso contenuto
+Grazie a quanto appreso 
+analizzane le prestazioni
+modificalo, dove ritieni necessario, per migliorarle.
