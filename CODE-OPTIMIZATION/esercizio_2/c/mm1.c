@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-//#define nn (2048)
+//#define nn (1024)
 #include "size.h"
 
 #include "inc_precision.h"

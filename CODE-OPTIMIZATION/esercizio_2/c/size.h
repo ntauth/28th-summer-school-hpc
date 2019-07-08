@@ -1,2 +1,2 @@
-#define nn (2048)
+#define nn (1024)
 
