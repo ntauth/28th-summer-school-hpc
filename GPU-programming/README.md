@@ -48,3 +48,10 @@ module load cuda
 module list
 ```
 
+## Get a compute node interactively
+
+```bash
+srun -N 1 -A train_scR2019 -p gll_usr_gpuprod --reservation=s_tra_gpuR --gres=gpu:kepler:1 --pty /bin/bash
+```
+
+

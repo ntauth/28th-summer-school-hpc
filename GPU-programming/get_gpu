@@ -1,0 +1,8 @@
+# source this file to enagle get_gpu command from console
+function get_gpu () {
+  local reservation="s_tra_gpuR"
+  local accounting="train_scR2019"
+  
+  command="srun -X -t 10 -N 1 --ntasks-per-node 4 --gres=gpu:kepler:1 -p gll_usr_gpuprod -A ${accounting} --reservation ${reservation} --pty /usr/bin/bash"
+  $command
+}
