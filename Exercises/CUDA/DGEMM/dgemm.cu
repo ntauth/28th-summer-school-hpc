@@ -96,7 +96,7 @@ void MatrixMulOnDevice(DataType_t* M, DataType_t* N, DataType_t* P, int Width)
     elapsed /= 1000.f; // Convert to seconds
 
     // calculate Mflops
-    mflops = 2 * pow(Width, 3) / elapsed;
+    mflops = 1e-6 * 2 * pow(Width, 3) / elapsed;
 
     printf("Kernel elapsed time %fs \n", elapsed);
     printf("Mflops: %f\n", mflops);
