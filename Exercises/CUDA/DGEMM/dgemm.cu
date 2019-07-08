@@ -24,7 +24,7 @@ void MatrixMulOnHost(DataType_t* M, DataType_t* N, DataType_t* P, int Width)
             for (k = 0; k < Width; k++)
                 pvalue += M[i * Width + k] * N[k * Width + j];
 
-            P[i * Width + j] = pvalue;
+            P[i*Width + j] = pvalue;
         }
     }
 }
@@ -34,8 +34,8 @@ __global__ void MatrixMulKernel(DataType_t* dM, DataType_t* dN, DataType_t* dP, 
     int i, j, k;
     DataType_t pvalue;
 
-    i = blockIdx.x * blockDim.x + threadIdx.x;
-    j = blockIdx.y * blockDim.y + threadIdx.y;
+    i = blockIdx.y * blockDim.y + threadIdx.y;
+    j = blockIdx.x * blockDim.x + threadIdx.x;
 
     pvalue = 0;
 
@@ -114,6 +114,9 @@ int main(int argc, char** argv)
 {
     int Width;
     DataType_t *M, *N, *hP, *gP;
+    DataType_t it;
+    int x, y;
+    int errCnt;
 
     if (argc < 2)
     {
@@ -161,9 +164,9 @@ int main(int argc, char** argv)
     memset(gP, 0, Width * Width * sizeof(DataType_t));
     memset(hP, 0, Width * Width * sizeof(DataType_t));
 
-    for (int y = 0; y < Width; y++)
+    for (y = 0; y < Width; y++)
     {
-        for (int x = 0; x < Width; x++)
+        for (x = 0; x < Width; x++)
         {
             M[y*Width + x] = (DataType_t) (((y + 1) * Width + x + 1) / Width);
             N[y*Width + x] = (DataType_t) (((y + 1) * Width + x + 1) / Width);
@@ -173,13 +176,13 @@ int main(int argc, char** argv)
     MatrixMulOnHost(M, N, hP, Width);
     MatrixMulOnDevice(M, N, gP, Width);
 
-    int errCnt = 0;
+    errCnt = 0;
 
-    for (int y = 0; y < Width; y++)
+    for (y = 0; y < Width; y++)
     {
-        for (int x = 0; x < Width; x++)
+        for (x = 0; x < Width; x++)
         {
-            DataType_t it = hP[y*Width + x];
+            it = hP[y*Width + x];
             
             if (fabs(it - gP[y*Width + x]) > epsilon*it)
             {
