@@ -4,7 +4,7 @@
 #define epsilon (float) 1e-5
 #define THREADxBLOCKalongXorY 16
 
-typedef DataType_t float;
+typedef float DataType_t;
 
 //
 // Kernels
@@ -116,7 +116,7 @@ int main(int argc, char** argv)
 
     if (argc < 2)
     {
-        fprintf(stderr,"Usage: %s Width\n",argv[0]);
+        fprintf(stderr, "Usage: %s Width\n", argv[0]);
         exit(1);
     }
 
@@ -124,14 +124,14 @@ int main(int argc, char** argv)
 
     if (Width < 1)
     {
-        fprintf(stderr,"Error Width=%d, must be > 0\n",Width);
+        fprintf(stderr, "Error Width=%d, must be > 0\n", Width);
         exit(1);
     }
 
-    M = (DataType_t*) malloc(Width*Width*sizeof(DataType_));
-    N = (DataType_t*) malloc(Width*Width*sizeof(DataType_));
-    hP = (DataType_t*) malloc(Width*Width*sizeof(DataType_));
-    gP = (DataType_t*) malloc(Width*Width*sizeof(DataType_));
+    M = (DataType_t*) malloc(Width * Width * sizeof(DataType_t));
+    N = (DataType_t*) malloc(Width * Width * sizeof(DataType_t));
+    hP = (DataType_t*) malloc(Width * Width * sizeof(DataType_t));
+    gP = (DataType_t*) malloc(Width * Width * sizeof(DataType_t));
 
     if (M == NULL)
     {
