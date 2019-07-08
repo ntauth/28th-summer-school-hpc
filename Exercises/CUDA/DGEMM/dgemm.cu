@@ -158,8 +158,8 @@ int main(int argc, char** argv)
         exit(1);
     }
 
-    memset(gP,0,Width*Width*sizeof(DataType_));
-    memset(hP,0,Width*Width*sizeof(DataType_));
+    memset(gP, 0, Width * Width * sizeof(DataType_t));
+    memset(hP, 0, Width * Width * sizeof(DataType_t));
 
     for (int y = 0; y < Width; y++)
     {
