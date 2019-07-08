@@ -93,11 +93,11 @@ void MatrixMulOnDevice(DataType_t* M, DataType_t* N, DataType_t* P, int Width)
 
     // Event record, synchronization, elapsed time and destruction
     cudaEventElapsedTime(&elapsed, start, stop);
+    elapsed /= 1000.f; // Convert to seconds
 
     // calculate Mflops
     mflops = 2 * pow(Width, 3) / elapsed;
-    elapsed /= 1000.f; // Convert to seconds
-    
+
     printf("Kernel elapsed time %fs \n", elapsed);
     printf("Mflops: %f\n", mflops);
 
