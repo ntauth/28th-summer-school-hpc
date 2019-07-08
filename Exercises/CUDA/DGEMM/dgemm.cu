@@ -37,12 +37,15 @@ __global__ void MatrixMulKernel(DataType_t* dM, DataType_t* dN, DataType_t* dP, 
     i = blockIdx.y * blockDim.y + threadIdx.y;
     j = blockIdx.x * blockDim.x + threadIdx.x;
 
-    pvalue = 0;
+    if (i < Width && j < Width)
+    {
+        pvalue = 0;
 
-    for (k = 0; k < Width; k++)
-        pvalue += dM[i*Width + k] + dN[k*Width + j];
-    
-    dP[i*Width + j] = pvalue;
+        for (k = 0; k < Width; k++)
+            pvalue += dM[i*Width + k] * dN[k*Width + j];
+        
+        dP[i*Width + j] = pvalue;
+    }
 }
 
 void MatrixMulOnDevice(DataType_t* M, DataType_t* N, DataType_t* P, int Width)
