@@ -1,0 +1,5 @@
+module purge
+module load autoload
+module load intelmpi
+ifort -O2 laplace.f90 init_save.f90 -o laplace.f.exe
+icc -O2 laplace.c init_save.c -o laplace.c.exe
