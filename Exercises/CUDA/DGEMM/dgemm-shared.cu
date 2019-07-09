@@ -5,14 +5,15 @@
 #include <assert.h>
 
 #define epsilon (float) 1e-5
-#define THREADxBLOCKalongXorY 16
+
+#define NoOfBlocks 32
 
 typedef float DataType_t;
 
 //
 // Helpers
 //
-void MatrixRandomize(DataType_t* M, size_t Width)
+void MatrixRandomize(_Inout_ DataType_t* M, _In_ size_t Width)
 {
     size_t i;
 
@@ -20,10 +21,13 @@ void MatrixRandomize(DataType_t* M, size_t Width)
         M[i] = (DataType_t) drand48();
 }
 
+// __attribute__((always inline))
+// __device__
+
 //
-// Kernels
+// Host and Device Kernels
 //
-void MatrixMulOnHost(DataType_t* M, DataType_t* N, DataType_t* P, int Width)
+__host__ void MatrixMulOnHost(DataType_t* M, DataType_t* N, DataType_t* P, int Width)
 {
     int i, j, k;
     DataType_t pvalue;
@@ -42,22 +46,32 @@ void MatrixMulOnHost(DataType_t* M, DataType_t* N, DataType_t* P, int Width)
     }
 }
 
-__global__ void MatrixMulKernel(DataType_t* dM, DataType_t* dN, DataType_t* dP, int Width)
+__global__ void MatrixMulSharedKernel(
+    _In_ DataType_t* dM,
+    _In_ DataType_t* dN,
+    _Out_ DataType_t* dP,
+    _In_ size_t Width
+)
+/**
+ * \brief Matrix-Matrix multiplication using shared mem
+ *
+ */
 {
-    int i, j, k;
-    DataType_t pvalue;
+    __shared__ DataType_t As[NoOfBlocks][NoOfBlocks];
+    __shared__ DataType_t Bs[NoOfBlocks][NoOfBlocks];
 
-    i = blockIdx.y * blockDim.y + threadIdx.y;
-    j = blockIdx.x * blockDim.x + threadIdx.x;
+    DataType_t c;
+    size_t it, jt, ib, jb;
+    size_t k;
 
-    if (i < Width && j < Width)
+    it = threadIdx.y;
+    jt = threadIdx.x;
+    ib = blockIdx.y;
+    jb = blockIdx.x;
+
+    for (k = 0; k < Width / NoOfBlocks; k++)
     {
-        pvalue = 0;
 
-        for (k = 0; k < Width; k++)
-            pvalue += dM[i*Width + k] * dN[k*Width + j];
-        
-        dP[i*Width + j] = pvalue;
     }
 }
 
