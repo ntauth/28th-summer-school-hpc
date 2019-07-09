@@ -1,0 +1,5 @@
+module purge
+module load autoload
+module load intelmpi
+mpiifort -O2 laplace-mpi.f90 init_save_mpi.f90 -o laplace.mpi.f.exe
+mpiicc -O2 laplace-mpi.c init_save_mpi.c -o laplace.mpi.c.exe -lm
