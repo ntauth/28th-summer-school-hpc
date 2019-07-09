@@ -6,7 +6,7 @@
 
 #define epsilon (float) 1e-5
 
-#define NoOfBlocks 32
+#define BlockSize 32
 
 typedef float DataType_t;
 
@@ -57,8 +57,8 @@ __global__ void MatrixMulSharedKernel(
  *
  */
 {
-    __shared__ DataType_t As[NoOfBlocks][NoOfBlocks];
-    __shared__ DataType_t Bs[NoOfBlocks][NoOfBlocks];
+    __shared__ DataType_t As[BlockSize][BlockSize];
+    __shared__ DataType_t Bs[BlockSize][BlockSize];
 
     DataType_t c;
     size_t it, jt, ib, jb;
@@ -69,72 +69,62 @@ __global__ void MatrixMulSharedKernel(
     ib = blockIdx.y;
     jb = blockIdx.x;
 
-    for (k = 0; k < Width / NoOfBlocks; k++)
+    for (k = 0; k < Width / BlockSize; k++)
     {
 
     }
 }
 
-void MatrixMulOnDevice(DataType_t* M, DataType_t* N, DataType_t* P, int Width)
+void MatrixMulOnDevice(DataType_t* M, DataType_t* N, DataType_t* P, size_t Width)
 {
-    int gridsize, size;
-    float mflops;
-    DataType_t *dM, *dN, *dP;
-
-    cudaError_t mycudaerror;
     cudaEvent_t start, stop;
-    float elapsed;
+    DataType_t* d_A, *d_B, *d_C;
+    size_t size;
+    float gpu_time;
+    double time_sec, num_ops, gflops;
 
-    size = Width * Width * sizeof(DataType_t);
+    size = Width * Width * sizeof(float);
 
-    // CUDA grid management
-    gridsize = Width / THREADxBLOCKalongXorY;
-
-    if (gridsize * THREADxBLOCKalongXorY < Width)
-        gridsize = gridsize + 1;
-    
-    dim3 dimGrid(gridsize, gridsize);
-    dim3 dimBlock(THREADxBLOCKalongXorY, THREADxBLOCKalongXorY);
-    printf("Gridsize: %d\n", gridsize);
-
-    cudaMalloc(&dM, size);
-    cudaMemcpy(dM, M, size, cudaMemcpyHostToDevice);
-    cudaMalloc(&dN, size);
-    cudaMemcpy(dN, N, size, cudaMemcpyHostToDevice);
-    cudaMalloc(&dP, size);
-
-    // cudaGetLastError call to reset previous CUDA errors
-    mycudaerror = cudaGetLastError();
-
-    // Create start and stop CUDA events
+    // Load A and B to device memory 
+    cudaMalloc((void**) &d_A, size);
+    cudaMalloc((void**) &d_B, size);
+ 
+    cudaMemcpy(d_A, h_A, size, cudaMemcpyHostToDevice); 
+    cudaMemcpy(d_B, h_B, size, cudaMemcpyHostToDevice);
+ 
+    // Allocate C in device memory 
+    cudaMalloc((void**) &d_C, size);
+ 
+    // Grid specify
+    dim3 dimBlock(BlockSize, BlockSize); 
+    dim3 dimGrid(Width / dimBlock.x, Width / dimBlock.x);
+ 
     cudaEventCreate(&start);
     cudaEventCreate(&stop);
-
-    // Kernel launch
+    
+    // Start timing
     cudaEventRecord(start);
-    MatrixMulKernel<<<dimGrid, dimBlock>>>(dM, dN, dP, Width);
+ 
+    // Invoke kernel 
+    MatrixMulSharedKernel <<<dimGrid, dimBlock>>> (d_A, d_B, d_C, Width);
+ 
+    // End timing
     cudaEventRecord(stop);
-
-    // Device synchronization and cudaGetLastError call
     cudaEventSynchronize(stop);
-
-    // Event record, synchronization, elapsed time and destruction
-    cudaEventElapsedTime(&elapsed, start, stop);
-    elapsed /= 1000.f; // Convert to seconds
-
-    // calculate Mflops
-    mflops = 1e-6 * 2 * pow(Width, 3) / elapsed;
-
-    printf("Kernel elapsed time %fs \n", elapsed);
-    printf("Mflops: %f\n", mflops);
-
-    // copy back results from device
-    cudaMemcpy(P, dP, size, cudaMemcpyDeviceToHost);
-
-    // free memory on device
-    cudaFree(dM);
-    cudaFree(dN);
-    cudaFree(dP);
+ 
+    cudaEventElapsedTime(&gpu_time, start, stop);
+    time_sec = gpu_time / 1000.0;
+    num_ops = 2.0 * (double) Width * (double) Width * (double) Width;
+    gflops = 1.0e-9 * num_ops / time_sec;
+    printf("CUDA Gflops = %.4f , Time = %.5f s dim=%d\n", gflops, time_sec, Width);
+ 
+    // Read C from device memory 
+    cudaMemcpy(h_C, d_C, size, cudaMemcpyDeviceToHost); 
+ 
+    // Free device memory 
+    cudaFree(d_A);
+    cudaFree(d_B);
+    cudaFree(d_C);
 }
 
 //
@@ -142,88 +132,48 @@ void MatrixMulOnDevice(DataType_t* M, DataType_t* N, DataType_t* P, int Width)
 //
 int main(int argc, char** argv)
 {
-    int Width;
-    DataType_t *M, *N, *hP, *gP;
-    DataType_t it;
-    int x, y;
-    int errCnt;
+    DataType_t* h_A, *h_B, *cpu_result, *gpu_result;
+    size_t N, size;
+    size_t i;
+    int error;
 
-    if (argc < 2)
+    N = 32 * BlockSize;
+    size = N * N * sizeof(DataType_t);
+
+    // allocate matrices on the host
+    h_A = (DataType_t*) malloc(size * sizeof(DataType_t));
+    h_B = (DataType_t*) malloc(size * sizeof(DataType_t));
+
+    // init matrices
+    MatrixRandomize(h_A, N * N);
+    MatrixRandomize(h_B, N * N);
+
+    // allocate matrices to compare the results CPU/GPU
+    cpu_result = (DataType_t*) malloc(size * sizeof(DataType_t));
+    gpu_result = (DataType_t*) malloc(size * sizeof(DataType_t));
+
+    // compute on GPU
+    MatrixMulOnDevice(h_A, h_B, gpu_result, N);
+
+    // compute on CPU
+    MatrixMulOnHost(h_A, h_B, cpu_result, N);
+
+    // check results
+    error = 0;
+
+    for (i = 0; i < N * N; i++)
     {
-        fprintf(stderr, "Usage: %s Width\n", argv[0]);
-        exit(1);
+        if (fabs(cpu_result[i] - gpu_result[i]) > epsilon * cpu_result[i])
+	        error++;
     }
 
-    Width = atoi(argv[1]);
-
-    if (Width < 1)
-    {
-        fprintf(stderr, "Error Width=%d, must be > 0\n", Width);
-        exit(1);
-    }
-
-    M = (DataType_t*) malloc(Width * Width * sizeof(DataType_t));
-    N = (DataType_t*) malloc(Width * Width * sizeof(DataType_t));
-    hP = (DataType_t*) malloc(Width * Width * sizeof(DataType_t));
-    gP = (DataType_t*) malloc(Width * Width * sizeof(DataType_t));
-
-    if (M == NULL)
-    {
-        fprintf(stderr,"Could not get memory for M\n");
-        exit(1);
-    }
-
-    if (N == NULL)
-    {
-        fprintf(stderr,"Could not get memory for N\n");
-        exit(1);
-    }
-
-    if (hP == NULL)
-    {
-        fprintf(stderr,"Could not get memory for hP\n");
-        exit(1);
-    }
-
-    if (gP == NULL)
-    {
-        fprintf(stderr,"Could not get memory for gP\n");
-        exit(1);
-    }
-
-    memset(gP, 0, Width * Width * sizeof(DataType_t));
-    memset(hP, 0, Width * Width * sizeof(DataType_t));
-
-    for (y = 0; y < Width; y++)
-    {
-        for (x = 0; x < Width; x++)
-        {
-            M[y*Width + x] = (DataType_t) (((y + 1) * Width + x + 1) / Width);
-            N[y*Width + x] = (DataType_t) (((y + 1) * Width + x + 1) / Width);
-        }
-    }
-
-    MatrixMulOnHost(M, N, hP, Width);
-    MatrixMulOnDevice(M, N, gP, Width);
-
-    errCnt = 0;
-
-    for (y = 0; y < Width; y++)
-    {
-        for (x = 0; x < Width; x++)
-        {
-            it = hP[y*Width + x];
-            
-            if (fabs(it - gP[y*Width + x]) > epsilon*it)
-            {
-                printf("failing x=%d, y=%d: %f!=%f \n", x, y, it, gP[y*Width + x]);
-                errCnt++;
-            }
-        }
-    }
-
-    if (errCnt == 0)
+    if (error == 0)
         printf("\nTEST PASSED\n");
     else
-        printf("\n\nTEST FAILED: number of errors:  %d\n", errCnt);
+        printf("\n\nTEST FAILED: number of errors:  %d\n", error);
+
+    free(h_A);
+    free(h_B);
+    free(cpu_result);
+    free(gpu_result);
 }
