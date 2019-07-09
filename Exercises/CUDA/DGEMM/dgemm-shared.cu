@@ -21,7 +21,6 @@ void MatrixRandomize(_Inout_ DataType_t* M, _In_ size_t Width)
         M[i] = (DataType_t) drand48();
 }
 
-__attribute__((always inline))
 __device__ size_t GetOffset(size_t idx_i, size_t idx_j, size_t Width)
 {
     return idx_i * Width * BlockSize + idx_j * BlockSize;
