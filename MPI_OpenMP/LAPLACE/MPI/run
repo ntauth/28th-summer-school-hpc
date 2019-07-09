@@ -1,0 +1,6 @@
+echo "Fortran tests"
+srun --cpu_bind=cores ./laplace.mpi.f.exe<input.laplace
+sleep 5
+echo "C tests"
+srun --cpu_bind=cores ./laplace.mpi.c.exe<input.laplace
+
