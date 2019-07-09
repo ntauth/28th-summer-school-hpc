@@ -21,8 +21,11 @@ void MatrixRandomize(_Inout_ DataType_t* M, _In_ size_t Width)
         M[i] = (DataType_t) drand48();
 }
 
-// __attribute__((always inline))
-// __device__
+__attribute__((always inline))
+__device__ size_t GetOffset(size_t idx_i, size_t idx_j, size_t Width)
+{
+    return idx_i * Width * BlockSize + idx_j * BlockSize;
+}
 
 //
 // Host and Device Kernels
@@ -62,20 +65,44 @@ __global__ void MatrixMulSharedKernel(
 
     DataType_t c;
     size_t it, jt, ib, jb;
-    size_t k;
+    size_t a_off, b_off, c_off;
+    size_t kb, k;
 
     it = threadIdx.y;
     jt = threadIdx.x;
     ib = blockIdx.y;
     jb = blockIdx.x;
 
-    for (k = 0; k < Width / BlockSize; k++)
-    {
+    c = 0.f;
 
+    for (kb = 0; kb < Width / BlockSize; kb++)
+    {
+        a_off = GetOffset(ib, kb, Width);
+        b_off = GetOffset(kb, jb, Width);
+
+        As[it][jt] = dM[a_off + it*Width + jt];
+        Bs[it][jt] = dN[b_off + it*Width + jt];
+
+        // Barrier
+        __syncthreads();
+
+        for (k = 0; k < BlockSize; k++)
+            c += As[it][k] * Bs[k][jt];
+        
+        // Barrier
+        __syncthreads();
     }
+
+    c_off = GetOffset(ib, jb, Width);
+    dP[c_off + it*Width + jt] = c;
 }
 
-void MatrixMulOnDevice(DataType_t* M, DataType_t* N, DataType_t* P, size_t Width)
+void MatrixMulOnDevice(
+    const DataType_t* h_A,
+    const DataType_t* h_B,
+    DataType_t* h_C,
+    size_t Width
+)
 {
     cudaEvent_t start, stop;
     DataType_t* d_A, *d_B, *d_C;
