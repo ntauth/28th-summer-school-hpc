@@ -1,0 +1,70 @@
+Fortran tests
+1 version
+ Enter mesh size, max iterations and tollerance:
+ Number of MPI processes           4
+ Number of OpenMP threads           2
+
+ Elapsed time (s)     =    5.8306
+ Mesh size            =        5000
+ Stopped at iteration =         814
+ The maximum error    =  7.899966553708282E-004
+2 version
+ Enter mesh size, max iterations and tollerance:
+ Number of MPI processes           4
+ Number of OpenMP threads           2
+
+ Elapsed time (s)     =    5.9242
+ Mesh size            =        5000
+ Stopped at iteration =         814
+ The maximum error    =  7.899966553708282E-004
+3 version
+ Enter mesh size, max iterations and tollerance:
+ Number of MPI processes           4
+ Number of OpenMP threads           2
+
+ Elapsed time (s)     =    5.9040
+ Mesh size            =        5000
+ Stopped at iteration =         814
+ The maximum error    =  7.899966553708282E-004
+4 version
+ Enter mesh size, max iterations and tollerance:
+ Number of MPI processes           4
+ Number of OpenMP threads           2
+
+ Elapsed time (s)     =    5.8150
+ Mesh size            =        5000
+ Stopped at iteration =         814
+ The maximum error    =  7.899966553708282E-004
+C tests
+1 version
+Enter mesh size, max iterations and tolerance: 
+Number of MPI processes 4
+Number of OpenMP threads 2
+Elapsed time (s) = 5.85
+Mesh size: 5000
+Stopped at iteration: 814
+Maximum error: 7.899967E-04
+2 version
+Enter mesh size, max iterations and tolerance: 
+Number of MPI processes 4
+Number of OpenMP threads 2
+Elapsed time (s) = 5.88
+Mesh size: 5000
+Stopped at iteration: 814
+Maximum error: 7.899967E-04
+3 version
+Enter mesh size, max iterations and tolerance:
+Number of MPI processes 4
+Number of OpenMP threads 2
+Elapsed time (s) = 5.84
+Mesh size: 5000
+Stopped at iteration: 814
+Maximum error: 7.899967E-04
+ 4 version
+Enter mesh size, max iterations and tolerance: 
+Number of MPI processes 4
+Number of OpenMP threads 2
+Elapsed time (s) = 5.86
+Mesh size: 5000
+Stopped at iteration: 814
+Maximum error: 7.899967E-04

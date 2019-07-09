@@ -1,0 +1,6 @@
+echo "Fortran tests"
+./laplace.f.exe<input.laplace
+sleep 5
+echo "C tests"
+./laplace.c.exe<input.laplace
+

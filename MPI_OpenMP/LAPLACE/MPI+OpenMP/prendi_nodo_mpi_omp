@@ -1,0 +1,10 @@
+#!/bin/bash
+module purge
+module load autoload
+module load intelmpi
+export OMP_NUM_THREADS=$2
+export OMP_PLACES=cores
+export OMP_PROC_BIND=true
+export OMP_DISPLAY_ENV=true
+srun -N1 --ntasks-per-node=$1 --cpus-per-task=$2 --exclusive --partition=gll_usr_prod --pty bash
+
