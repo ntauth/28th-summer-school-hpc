@@ -1,5 +1,11 @@
 module purge
 module load autoload
 module load intelmpi
-mpiifort -O2 laplace-mpi.f90 init_save_mpi.f90 -o laplace.mpi.f.exe
-mpiicc -O2 laplace-mpi.c init_save_mpi.c -o laplace.mpi.c.exe -lm
+mpiifort -O2 -fopenmp laplace-ompmpi1.F90 init_save_mpi.f90 -o laplace.ompmpi1.f.exe
+mpiifort -O2 -fopenmp laplace-ompmpi2.F90 init_save_mpi.f90 -o laplace.ompmpi2.f.exe
+mpiifort -O2 -fopenmp laplace-ompmpi3.F90 init_save_mpi.f90 -o laplace.ompmpi3.f.exe
+mpiifort -O2 -fopenmp laplace-ompmpi4.F90 init_save_mpi.f90 -o laplace.ompmpi4.f.exe
+mpiicc -O2 -fopenmp laplace-ompmpi1.c init_save_mpi.c -o laplace.ompmpi1.c.exe 
+mpiicc -O2 -fopenmp laplace-ompmpi2.c init_save_mpi.c -o laplace.ompmpi2.c.exe
+mpiicc -O2 -fopenmp laplace-ompmpi3.c init_save_mpi.c -o laplace.ompmpi3.c.exe
+mpiicc -O2 -fopenmp laplace-ompmpi4.c init_save_mpi.c -o laplace.ompmpi4.c.exe

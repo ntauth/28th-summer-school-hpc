@@ -171,7 +171,7 @@ int main(int argc, char *argv[]) {
            T[stride_y*i] = buffer_r_bt[i-1];
       }
 
-      #pragma omp parallel for private(j) collapse(2)
+      #pragma omp parallel for private(j) collapse(2) reduction(max:myvar)
       for (i=1; i<=mymsize_x; ++i)
       {
          for (j=1; j<=mymsize_y; ++j) {         
@@ -184,8 +184,8 @@ int main(int argc, char *argv[]) {
 #endif  
          }
       }
-      
-      Tmp =T; T =Tnew; Tnew = Tmp; 
+
+      Tmp = T; T =Tnew; Tnew = Tmp; 
 
       MPI_Allreduce(&myvar, &var, 1, MPI_DOUBLE, MPI_MAX, MPI_COMM_WORLD);
 
