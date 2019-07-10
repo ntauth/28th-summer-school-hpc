@@ -1,0 +1,6 @@
+#!/bin/bash
+module purge
+module load autoload
+module load intelmpi
+srun -N1 --ntasks-per-node=$1 --exclusive --partition=gll_usr_prod --pty bash
+

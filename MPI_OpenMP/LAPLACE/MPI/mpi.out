@@ -1,0 +1,15 @@
+Fortran tests
+ Enter mesh size, max iterations and tollerance:
+ Number of MPI processes           4
+
+ Elapsed time (s)     =    9.4141
+ Mesh size            =        5000
+ Stopped at iteration =         814
+ The maximum error    =  7.899966553708282E-004
+C tests
+Number of MPI processes 4
+Elapsed time (s) = 9.53
+Mesh size: 5000
+Stopped at iteration: 814
+Maximum error: 7.899967E-04
+Enter mesh size, max iterations and tolerance: 

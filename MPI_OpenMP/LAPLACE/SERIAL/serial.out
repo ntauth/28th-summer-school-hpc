@@ -1,0 +1,13 @@
+Fortran tests
+ Enter mesh size, max iterations and tolerance:
+
+ Elapsed time (s)     =   35.2120
+ Mesh size            =        5000
+ Stopped at iteration =         814
+ The maximum error    =  7.899966553708282E-004
+C tests
+Enter mesh size, max iterations and tolerance: 
+Elapsed time (s) = 34.89
+Mesh size: 5000
+Maximum error: 7.899967E-04
+iter:      814, variation =   7.9000E-04
